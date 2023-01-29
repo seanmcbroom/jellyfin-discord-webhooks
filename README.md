@@ -8,6 +8,7 @@ To use these templates you will need to have the jellyfin discord webhooks plugi
 
 - Navigate to the system notifications in the Jellyfin dashboard for the template you want to use
 - Enable the notification and set it to only send to one admin account (otherwise you may get double notifications)
+- Setup a discord webhook in the webhooks plugin
 
 ### Notification Type Key
 
