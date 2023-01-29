@@ -13,9 +13,9 @@ To use these templates you will need to have the jellyfin discord webhooks plugi
 
 For each of the templates these are the Notifications Types they support.
 
-playback-start = Playback Start
-playback-ended = Playback Stop
-item-added = Item Added
+- playback-start = Playback Start
+- playback-ended = Playback Stop
+- item-added = Item Added
 
 ### Color isnt working
 
