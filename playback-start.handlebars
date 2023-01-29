@@ -1,0 +1,27 @@
+{
+    "content": "{{MentionType}}",
+    "avatar_url": "{{ServerUrl}}/Users/{{UserId}}/Images/Primary",
+    "username": "{{NotificationUsername}}",
+    "embeds": [
+        {
+            {{#if_equals ItemType 'Episode'}}
+                "title": "Playback Started • {{{SeriesName}}} S{{SeasonNumber00}}E{{EpisodeNumber00}} ~ {{{Name}}}",
+            {{else}}
+                "title": "Playback Started • {{{Name}}} ({{Year}})",
+            {{/if_equals}}
+
+            "thumbnail":{
+                "url": "{{ServerUrl}}/Items/{{ItemId}}/Images/Primary"
+            },
+
+            "description": "**Description:** \n> {{Overview}}\n\n**Run Time:** \n{{RunTime}}",
+
+            "color": "6750054",
+
+            "footer": {
+                "text": "{{{ServerName}}} • {{Timestamp}}",
+                "icon_url": "{{AvatarUrl}}"
+            }
+        }
+    ]
+}
