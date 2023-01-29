@@ -6,12 +6,14 @@
         {   
             {{#if_equals ItemType 'Season'}}
                 "title": "New Season • {{{SeriesName}}} {{{Name}}}",
-            {{else}}
-                {{#if_equals ItemType 'Episode'}}
-                    "title": "New Episode • {{{SeriesName}}} S{{SeasonNumber00}}E{{EpisodeNumber00}} ~ {{{Name}}}",
-                {{else}}
-                    "title": "New Movie • {{{Name}}} ({{Year}})",
-                {{/if_equals}}
+            {{/if_equals}}
+
+            {{#if_equals ItemType 'Episode'}}
+                "title": "New Episode • {{{SeriesName}}} S{{SeasonNumber00}}E{{EpisodeNumber00}} ~ {{{Name}}}",
+            {{/if_equals}}
+
+            {{#if_equals ItemType 'Movie'}}
+                "title": "New Movie • {{{Name}}} ({{Year}})",
             {{/if_equals}}
 
             "thumbnail":{
