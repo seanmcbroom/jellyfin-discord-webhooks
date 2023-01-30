@@ -27,6 +27,6 @@ Due to the way Discord set up their api you send color in its Decimal value [(co
 ### item-added
 ![New movie webhook preview](https://user-images.githubusercontent.com/57121175/215383785-c3a9fccc-cc88-489d-aa65-e762bd1bed75.png)
 ### playback-started
-![Playback started webhook preview](https://user-images.githubusercontent.com/57121175/215383840-78261b93-e058-4ee7-a2f1-cb8c16f84bd0.png)
+![Playback started webhook preview](https://user-images.githubusercontent.com/57121175/215386632-3de7f7b1-da9d-43d6-923b-5cc725736bb0.png)
 ### playback-ended
-![Playback ended webhook preview](https://user-images.githubusercontent.com/57121175/215383876-61056814-85a8-4c77-8a19-5a7f406e1509.png)
+![Playback ended webhook preview](https://user-images.githubusercontent.com/57121175/215386699-26e2d956-e074-4cfe-a445-b9c49ecb4e8f.png)
