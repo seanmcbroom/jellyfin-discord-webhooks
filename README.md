@@ -27,7 +27,7 @@ For each of the templates these are the Notifications Types they support.
 
 ### EmbedColor isnt working
 
-Due to the way Discord set up their api you send color in its decimal value For each of the templates these are the Notifications Types they support. The plugin doesnt use this so I have it hardcoded into the template, which you are free to change. [convert here](https://www.spycolor.com)
+Due to the way Discord set up their api you send color in its decimal value. The plugin doesnt use this so I have it hardcoded into the template, which you are free to change. [convert here](https://www.spycolor.com)
 
 ## Preview
 
