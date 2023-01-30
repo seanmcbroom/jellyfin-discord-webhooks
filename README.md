@@ -2,13 +2,18 @@
 
 ## Installation
 
-To use these templates you will need to have the jellyfin discord webhooks plugin installed.
+### Webhook Plugin
 
-## How to enable notifications
+To use these templates you will need to have the Jellyfin webhooks plugin installed.
 
-- Navigate to the system notifications in the Jellyfin dashboard for the template you want to use
-- Enable the notification and set it to only send to one admin account (otherwise you may get double notifications)
-- Setup a discord webhook in the webhooks plugin
+### How to enable a notification
+
+- Navigate to the system notifications in the Jellyfin dashboard
+- Enable the notifications for the webhooks you want to use, and set it to only send to one admin account (otherwise you may get double notifications)
+
+### Create a new webhook
+
+In the plugins tab, click on the webhooks plugin and create a new Discord webhook. Copy the template into the template section, don't forget to add the Server URL and other information. You will need to create a new webhook for each notification.
 
 ### Notification Type Key
 
@@ -18,9 +23,11 @@ For each of the templates these are the Notifications Types they support.
 - playback-ended = Playback Stop
 - item-added = Item Added
 
+## Help
+
 ### EmbedColor isnt working
 
-Due to the way Discord set up their api you send color in its Decimal value [(convert)](https://www.spycolor.com). The plugin doesnt use this so I have it hardcoded into the template, which you are free to change
+Due to the way Discord set up their api you send color in its decimal value. The plugin doesnt use this so I have it hardcoded into the template, which you are free to change. [convert here](https://www.spycolor.com)
 
 ## Preview
 
