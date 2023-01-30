@@ -5,7 +5,14 @@
 ### Webhook Plugin
 
 To use these templates you will need to have the Jellyfin webhooks plugin installed.
-
+{else}}
+                {{#if_equals PlayedToCompletion true}}
+                    "title": "Playback Completed • {{{Name}}} ({{Year}})",
+                {{else}}
+                    "title": "Playback Ended • {{{Name}}} ({{Year}})",
+                {{/if_equals}}
+                
+            {{/if_equals}}
 ### How to enable a notification
 
 - Navigate to the system notifications in the Jellyfin dashboard
@@ -37,3 +44,5 @@ Due to the way Discord set up their api you send color in its decimal value. The
 ![Playback started webhook preview](https://user-images.githubusercontent.com/57121175/215386632-3de7f7b1-da9d-43d6-923b-5cc725736bb0.png)
 ### playback-ended
 ![Playback ended webhook preview](https://user-images.githubusercontent.com/57121175/215386699-26e2d956-e074-4cfe-a445-b9c49ecb4e8f.png)
+![Playback completed webhook preview](https://user-images.githubusercontent.com/57121175/215414134-ae2d8837-2433-41f4-9ef3-1d81bd6d4158.png)
+
