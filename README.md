@@ -5,14 +5,7 @@
 ### Webhook Plugin
 
 To use these templates you will need to have the Jellyfin webhooks plugin installed.
-{else}}
-                {{#if_equals PlayedToCompletion true}}
-                    "title": "Playback Completed • {{{Name}}} ({{Year}})",
-                {{else}}
-                    "title": "Playback Ended • {{{Name}}} ({{Year}})",
-                {{/if_equals}}
-                
-            {{/if_equals}}
+
 ### How to enable a notification
 
 - Navigate to the system notifications in the Jellyfin dashboard
