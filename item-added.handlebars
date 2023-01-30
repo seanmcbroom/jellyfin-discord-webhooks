@@ -20,7 +20,20 @@
                 "url": "{{ServerUrl}}/Items/{{ItemId}}/Images/Primary"
             },
 
-            "description": "**Description:** \n> {{Overview}}\n\n[**Watch Now**]({{ServerUrl}}/web/index.html#!/details?id={{ItemId}}&serverId={{ServerId}})",
+            "description": "
+            {{~#if_exist Overview~}}
+                > {{Overview}}\n\n
+            {{~/if_exist~}}
+
+            {{~#if_exist ServerUrl~}}
+                [**Watch Now** ]({{ServerUrl}}/web/index.html#!/details?id={{ItemId}}&serverId={{ServerId}})
+            {{~/if_exist~}}
+
+            {{~#if_exist Provider_imdb~}}
+                • [**IMDb**](https://www.imdb.com/title/{{Provider_imdb}}/)
+            {{~/if_exist~}}
+
+            ",
 
             "color": "3381708",
 
