@@ -41,8 +41,9 @@
                 {{~/if_equals~}}
             {{~/if_exist~}}
 
-            
-
+            {{~#if_exist Provider_musicbrainzartist~}}
+                • [**MusicBrainz** ](https://musicbrainz.org/artist/{{Provider_musicbrainzartist}})
+            {{~/if_exist~}}
             ",
 
             "color": "3381708",
