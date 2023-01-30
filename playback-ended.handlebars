@@ -26,7 +26,12 @@
 
             "description": "> {{Overview}}\n\n``[{{PlaybackPosition}}/{{RunTime}}]``",
 
-            "color": "15737923",
+            {{#if_equals PlayedToCompletion true}}
+                "color": "3381759",
+            {{else}}
+                "color": "15737923",
+            {{/if_equals}}
+            
 
             "footer": {
                 "text": "{{{ServerName}}} • {{Timestamp}}",
