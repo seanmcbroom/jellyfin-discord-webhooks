@@ -30,8 +30,18 @@
             {{~/if_exist~}}
 
             {{~#if_exist Provider_imdb~}}
-                • [**IMDb**](https://www.imdb.com/title/{{Provider_imdb}}/)
+                • [**IMDb** ](https://www.imdb.com/title/{{Provider_imdb}}/)
             {{~/if_exist~}}
+            
+            {{~#if_exist Provider_tmdb~}}
+                {{~#if_equals ItemType 'Movie'~}}
+                    • [**TMDb** ](https://www.themoviedb.org/movie/{{Provider_tmdb}})
+                {{~else~}}
+                    • [**TMDb** ](https://www.themoviedb.org/tv/{{Provider_tmdb}})
+                {{~/if_equals~}}
+            {{~/if_exist~}}
+
+            
 
             ",
 
