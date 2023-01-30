@@ -24,7 +24,13 @@
                 "url": "{{ServerUrl}}/Items/{{ItemId}}/Images/Primary"
             },
 
-            "description": "**Description:** \n> {{Overview}}\n\n**Run Time:** \n{{RunTime}}",
+            "description": "
+            {{~#if_exist Overview~}}
+                > {{Overview}}\n\n
+            {{~/if_exist~}}
+
+            ``[{{PlaybackPosition}}/{{RunTime}}]``
+            ",
 
             "color": "15737923",
 
