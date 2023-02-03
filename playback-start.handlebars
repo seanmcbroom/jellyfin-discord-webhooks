@@ -4,12 +4,16 @@
     "username": "{{NotificationUsername}}",
     "embeds": [
         {
-            {{#if_equals ItemType 'Episode'}}
-                "title": "Playback Started • {{{SeriesName}}} S{{SeasonNumber00}}E{{EpisodeNumber00}} ~ {{{Name}}}",
-            {{else}}
-                "title": "Playback Started • {{{Name}}} ({{Year}})",
-            {{/if_equals}}
+            "author": {
+                {{#if_equals ItemType 'Episode'}}
+                    "name": "Playback Started • {{{SeriesName}}} S{{SeasonNumber00}}E{{EpisodeNumber00}} ~ {{{Name}}}",
+                {{else}}
+                    "name": "Playback Started • {{{Name}}} ({{Year}})",
+                {{/if_equals}}
 
+                "url": "{{ServerUrl}}/web/index.html#!/details?id={{ItemId}}&serverId={{ServerId}}"
+            },
+            
             "thumbnail":{
                 "url": "{{ServerUrl}}/Items/{{ItemId}}/Images/Primary"
             },

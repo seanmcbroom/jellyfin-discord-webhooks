@@ -4,17 +4,22 @@
     "username": "{{{BotUsername}}}",
     "embeds": [
         {   
-            {{#if_equals ItemType 'Season'}}
-                "title": "New Season • {{{SeriesName}}} {{{Name}}}",
-            {{/if_equals}}
+            "author": {
+                {{#if_equals ItemType 'Season'}}
+                    "name": "New Season • {{{SeriesName}}} {{{Name}}}",
+                {{/if_equals}}
 
-            {{#if_equals ItemType 'Episode'}}
-                "title": "New Episode • {{{SeriesName}}} S{{SeasonNumber00}}E{{EpisodeNumber00}} ~ {{{Name}}}",
-            {{/if_equals}}
+                {{#if_equals ItemType 'Episode'}}
+                    "name": "New Episode • {{{SeriesName}}} S{{SeasonNumber00}}E{{EpisodeNumber00}} ~ {{{Name}}}",
+                {{/if_equals}}
 
-            {{#if_equals ItemType 'Movie'}}
-                "title": "New Movie • {{{Name}}}",
-            {{/if_equals}}
+                {{#if_equals ItemType 'Movie'}}
+                    "name": "New Movie • {{{Name}}}",
+                {{/if_equals}}
+
+                "url": "{{ServerUrl}}/web/index.html#!/details?id={{ItemId}}&serverId={{ServerId}}"
+            },
+            
 
             "thumbnail":{
                 "url": "{{ServerUrl}}/Items/{{ItemId}}/Images/Primary"

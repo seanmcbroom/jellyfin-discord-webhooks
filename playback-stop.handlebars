@@ -4,21 +4,24 @@
     "username": "{{NotificationUsername}}",
     "embeds": [
         {
-            {{#if_equals ItemType 'Episode'}}
-                {{#if_equals PlayedToCompletion true}}
-                    "title": "Playback Completed • {{{SeriesName}}} S{{SeasonNumber00}}E{{EpisodeNumber00}} ~ {{{Name}}}",
+            "author": {
+                {{#if_equals ItemType 'Episode'}}
+                    {{#if_equals PlayedToCompletion true}}
+                        "name": "Playback Completed • {{{SeriesName}}} S{{SeasonNumber00}}E{{EpisodeNumber00}} ~ {{{Name}}}",
+                    {{else}}
+                        "name": "Playback Stopped • {{{SeriesName}}} S{{SeasonNumber00}}E{{EpisodeNumber00}} ~ {{{Name}}}",
+                    {{/if_equals}}
+                    
                 {{else}}
-                    "title": "Playback Stopped • {{{SeriesName}}} S{{SeasonNumber00}}E{{EpisodeNumber00}} ~ {{{Name}}}",
+                    {{#if_equals PlayedToCompletion true}}
+                        "name": "Playback Completed • {{{Name}}} ({{Year}})",
+                    {{else}}
+                        "name": "Playback Stopped • {{{Name}}} ({{Year}})",
+                    {{/if_equals}}
                 {{/if_equals}}
-                
-            {{else}}
-                {{#if_equals PlayedToCompletion true}}
-                    "title": "Playback Completed • {{{Name}}} ({{Year}})",
-                {{else}}
-                    "title": "Playback Stopped • {{{Name}}} ({{Year}})",
-                {{/if_equals}}
-                
-            {{/if_equals}}
+
+                "url": "{{ServerUrl}}/web/index.html#!/details?id={{ItemId}}&serverId={{ServerId}}"
+            },
 
             "thumbnail":{
                 "url": "{{ServerUrl}}/Items/{{ItemId}}/Images/Primary"
@@ -31,6 +34,7 @@
             {{else}}
                 "color": "15737923",
             {{/if_equals}}
+            
             
 
             "footer": {
