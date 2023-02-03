@@ -32,10 +32,9 @@ Due to the way Discord set up their api you send color in its decimal value. The
 ## Preview
 
 ### item-added
-![New movie webhook preview](https://user-images.githubusercontent.com/57121175/215383785-c3a9fccc-cc88-489d-aa65-e762bd1bed75.png)
+![New movie webhook preview](https://user-images.githubusercontent.com/57121175/216639661-a43b8137-178a-4f2f-b36e-436989aaa7d5.png)
 ### playback-started
-![Playback started webhook preview](https://user-images.githubusercontent.com/57121175/215386632-3de7f7b1-da9d-43d6-923b-5cc725736bb0.png)
+![Playback started webhook preview](https://user-images.githubusercontent.com/57121175/216639514-90945376-fb06-4446-b861-018be614cb9b.png)
 ### playback-ended
-![Playback ended webhook preview](https://user-images.githubusercontent.com/57121175/215386699-26e2d956-e074-4cfe-a445-b9c49ecb4e8f.png)
-![Playback completed webhook preview](https://user-images.githubusercontent.com/57121175/215414134-ae2d8837-2433-41f4-9ef3-1d81bd6d4158.png)
-
+![Playback ended webhook preview](https://user-images.githubusercontent.com/57121175/216639570-1848cf78-3daf-4995-a3ac-037673190d06.png)
+![Playback completed webhook preview](https://user-images.githubusercontent.com/57121175/216639615-25825104-31ff-4140-aade-82471e1081c5.png)
