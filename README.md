@@ -20,7 +20,7 @@ In the plugins tab, click on the webhooks plugin and create a new Discord webhoo
 For each of the templates these are the Notifications Types they support.
 
 - playback-start = Playback Start
-- playback-ended = Playback Stop
+- playback-stop = Playback Stop
 - item-added = Item Added
 
 ## Help
