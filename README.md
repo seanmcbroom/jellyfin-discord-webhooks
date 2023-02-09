@@ -38,3 +38,6 @@ Due to the way Discord set up their api you send color in its decimal value. The
 ### playback-stopped
 ![Playback stopped webhook preview](https://user-images.githubusercontent.com/57121175/216639570-1848cf78-3daf-4995-a3ac-037673190d06.png)
 ![Playback completed webhook preview](https://user-images.githubusercontent.com/57121175/216639615-25825104-31ff-4140-aade-82471e1081c5.png)
+### User Locked Out
+![User locked out webhook preview](https://user-images.githubusercontent.com/57121175/217963191-0b7a00ff-93bb-4746-8512-58a470b4afcc.png)
+
