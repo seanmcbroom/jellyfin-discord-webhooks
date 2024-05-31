@@ -6,12 +6,6 @@
 
 To use these templates you will need to have the Jellyfin webhooks plugin installed.
 
-### How to enable a notification
-*Notifications have been deprecated, so this is only nessesary on older versions of Jellyfin*
-
-- Navigate to the system notifications in the Jellyfin dashboard
-- Enable the notifications for the webhooks you want to use, and set it to only send to one admin account (otherwise you may get double notifications)
-
 ### Create a new webhook
 
 In the plugins tab, click on the webhooks plugin and create a new Discord webhook. Select the notification type (look below), then copy the template into the template section. Don't forget to add your Server URL and other information.
