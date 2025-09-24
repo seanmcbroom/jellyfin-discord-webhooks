@@ -7,7 +7,7 @@
             "author": {
                 "name": "User Locked Out • {{{NotificationUsername}}}",
 
-                "url": "{{ServerUrl}}/web/index.html#!/useredit.html?userId={{UserId}}"
+                "url": "{{ServerUrl}}/web/#/dashboard/users/password?userId={{UserId}}"
             },
 
             "thumbnail":{
@@ -20,11 +20,11 @@
             {{~/if_exist~}}
             
             {{~#if_exist ServerUrl~}}
-                [**Enable User **]({{ServerUrl}}/web/index.html#!/useredit.html?userId={{UserId}})
+                [**Enable User **]({{ServerUrl}}/web/#/dashboard/users/profile?userId={{UserId}})
             {{~/if_exist~}}
 
             {{~#if_exist ServerUrl~}}
-                • [**Reset Password**]({{ServerUrl}}/web/index.html#!/userpassword.html?userId={{UserId}})
+                • [**Reset Password**]({{ServerUrl}}/web/#/dashboard/users/password?userId={{UserId}})
             {{~/if_exist~}}
             ",
 
