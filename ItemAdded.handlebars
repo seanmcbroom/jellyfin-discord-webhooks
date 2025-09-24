@@ -17,7 +17,7 @@
                     "name": "Movie Added • {{{Name}}}",
                 {{/if_equals}}
 
-                "url": "{{ServerUrl}}/web/index.html#!/details?id={{ItemId}}&serverId={{ServerId}}"
+                "url": "{{ServerUrl}}/web/#/details?id={{ItemId}}&serverId={{ServerId}}"
             },
             
 
@@ -31,7 +31,7 @@
             {{~/if_exist~}}
 
             {{~#if_exist ServerUrl~}}
-                [**Watch Now** ]({{ServerUrl}}/web/index.html#!/details?id={{ItemId}}&serverId={{ServerId}})
+                [**Watch Now** ]({{ServerUrl}}/web/#/details?id={{ItemId}}&serverId={{ServerId}})
             {{~/if_exist~}}
 
             {{~#if_exist Provider_imdb~}}
